@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Quiz</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <button class="high-score-button">View high score</button>
+            <div class="quiz-intro">Coding Quiz Challenge</div>
+            <div class="timer">Time: </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="intro">
+                    <div class="large-intro">
+                        <p>
+                        Try to answer the folloing code-related questions within the time limit. <br>
+                         Keep in mind that incorrect answers will penalize your score/time <br> 
+                         by ten seconds!
+                        </p>
+                    </div>
+                    <button class="start-button">Start Quiz</button>
+                </div>
+                
+                <div id="quiz-format">
+                    <div class="timer">Time: </div>
+                    <div id="quiz-questions"></div>
+                    <button id="a">1.</button>
+                    <button id="b">2.</button>
+                    <button id="c">3.</button>
+                    <button id="d">4.</button>
+                    <div id="total-score"></div>
+                </div>
+
+                <div id="score-submit">
+                    <div class="final-score"></div>
+                    <label for="playerInitials">Enter initials: </label>
+                    <input type="text" id="playerInitials" name="playerInitials"> 
+                    <button id="submitButton">Submit</button>
+                </div>
+
+                <div id="final-screen">
+                    <div id="final-score-message">
+                        <h1>High scores</h1>
+                        <div id="initials-highscore"></div>
+                        <div id="highscore-results"></div>
+                    </div>
+                    <div id="final-button">
+                        <button id="go-back" >Go Back</button>
+                        <button id="clear-score">Clear high score</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
